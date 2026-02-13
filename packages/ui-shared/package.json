@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
+    "prepare": "npm run build",
     "test": "vitest run --passWithNoTests",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "clean": "rm -rf dist"
@@ -15,6 +16,19 @@
   "dependencies": {
     "@moxiu/types": "workspace:*",
     "@moxiu/utils": "workspace:*"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "publishConfig": {
+    "access": "restricted"
   },
   "devDependencies": {}
 }
