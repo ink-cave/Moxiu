@@ -13,6 +13,8 @@
     "changeset": "changeset",
     "version:changeset": "changeset version",
     "publish:changeset": "changeset publish",
+    "env:check": "node scripts/check-env.cjs",
+    "env:setup": "node scripts/env-setup.cjs",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
   },
@@ -34,7 +36,9 @@
     "lint-staged": "^14.0.0",
     "@commitlint/config-conventional": "^17.5.0",
     "@commitlint/cli": "^17.5.0",
-    "@changesets/cli": "^2.26.0"
+    "@changesets/cli": "^2.26.0",
+    "dotenv": "^16.1.4",
+    "prompts": "^2.4.2"
   },
   "lint-staged": {
     "packages/*/src/**/*.{ts,tsx,js,jsx}": [
