@@ -1,0 +1,20 @@
+{
+  "name": "@moxiu/ui-shared",
+  "version": "0.0.1",
+  "private": false,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "test": "vitest run --passWithNoTests",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@moxiu/types": "workspace:*",
+    "@moxiu/utils": "workspace:*"
+  },
+  "devDependencies": {}
+}

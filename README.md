@@ -1,2 +1,15 @@
 # moxiu
-个人技术栈集合，会持续集成，打造自己的产品系列
+
+To install dependencies:
+
+```bash
+bun install
+```
+
+To run:
+
+```bash
+bun run index.ts
+```
+
+This project was created using `bun init` in bun v1.3.6. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
