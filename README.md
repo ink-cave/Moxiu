@@ -1,5 +1,16 @@
 # moxiu
 
+Monorepo for moxiu packages.
+
+Quick commands:
+
+- Install: `bun install`
+- Build all: `bun run build`
+- Run tests: `bun run test`
+- Lint: `bun run lint`
+
+# moxiu
+
 To install dependencies:
 
 ```bash
